@@ -1,0 +1,22 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.styleEditor {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
