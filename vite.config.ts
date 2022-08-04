@@ -10,9 +10,10 @@ function pathResolve(dir: string): string {
 export default ({ command, mode }): UserConfig => {
 	const root = process.cwd();
 	const env = loadEnv(mode, root);
-	const { VITE_TITLE, VITE_PORT } = env;
+	const { VITE_TITLE, VITE_PORT, VITE_BASE } = env;
 
 	return {
+		base: VITE_BASE,
 		server: {
 			port: Number(VITE_PORT),
 		},
